@@ -2,7 +2,6 @@ package com.github.hcsp.collection;
 
 import java.util.HashSet;
 import java.util.LinkedHashSet;
-import java.util.TreeSet;
 
 public class RemoveDuplicateCharsInString {
     // 修改这个方法使得它能够输出正确结果：
