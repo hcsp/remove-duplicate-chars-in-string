@@ -13,6 +13,8 @@ public class RemoveDuplicateCharsInString {
         // 改用 LinkedHashSet
         // 保证元素添加的顺序：LinkedHashSet
         // 保证元素自然的顺序：TreeSet
+
+
         LinkedHashSet<Character> charSet = new LinkedHashSet<>();
 
         for (int i = 0; i < s.length(); i++) {
