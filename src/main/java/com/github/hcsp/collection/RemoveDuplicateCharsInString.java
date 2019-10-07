@@ -18,7 +18,7 @@ public class RemoveDuplicateCharsInString {
         }
         String result = "";
         for (Character ch : order) {
-            result += order.get(order.lastIndexOf(ch));
+            result += ch;
         }
 
         return result;
