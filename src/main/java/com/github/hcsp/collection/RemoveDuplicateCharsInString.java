@@ -8,16 +8,16 @@ public class RemoveDuplicateCharsInString {
     // 输入ccbbaa返回cba
     // 输入apple返回aple
     public static String removeDuplicateCharsInString(String s) {
-        HashSet<Character> charSet = new HashSet<>();
+        LinkedHashSet<Character> charSet = new LinkedHashSet<>();
         for (int i = 0; i < s.length(); i++) {
             charSet.add(s.charAt(i));
         }
 
-        String result = "";
+        StringBuilder result = new StringBuilder();
         for (Character ch : charSet) {
-            result += ch;
+            resuit.append(ch);
         }
 
-        return result;
+        return result.toString;
     }
 }
