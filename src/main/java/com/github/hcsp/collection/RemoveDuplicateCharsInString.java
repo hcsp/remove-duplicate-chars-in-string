@@ -13,7 +13,6 @@ public class RemoveDuplicateCharsInString {
         for (int i = 0; i < s.length(); i++) {
             charSet.add(s.charAt(i));
         }
-
         StringBuilder result = new StringBuilder();
         for (Character ch : charSet) {
             result.append(ch);
