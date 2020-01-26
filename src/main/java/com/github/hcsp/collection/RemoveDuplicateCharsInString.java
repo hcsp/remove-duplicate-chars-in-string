@@ -1,6 +1,5 @@
 package com.github.hcsp.collection;
 
-import java.util.HashSet;
 import java.util.LinkedHashSet;
 
 public class RemoveDuplicateCharsInString {
