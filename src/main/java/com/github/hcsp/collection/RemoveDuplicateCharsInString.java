@@ -1,7 +1,5 @@
 package com.github.hcsp.collection;
 
-import java.util.HashMap;
-import java.util.HashSet;
 import java.util.LinkedHashSet;
 
 public class RemoveDuplicateCharsInString {
@@ -29,3 +27,4 @@ public class RemoveDuplicateCharsInString {
         System.out.println(removeDuplicateCharsInString("apple"));
     }
 }
+
