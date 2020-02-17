@@ -9,12 +9,12 @@ public class RemoveDuplicateCharsInString {
     // 输入ccbbaa返回cba
     // 输入apple返回aple
     public static String removeDuplicateCharsInString(String s) {
-        LinkedHashSet<Character> charset = new LinkedHashSet<>();
+        LinkedHashSet<Character> charSet = new LinkedHashSet<>();
         for (int i = 0; i < s.length(); i++) {
-            charset.add(s.charAt(i));
+            charSet.add(s.charAt(i));
         }
         String result = "";
-        for (Character ch : charset) {
+        for (Character ch : charSet) {
             result += ch;
         }
         return result;
