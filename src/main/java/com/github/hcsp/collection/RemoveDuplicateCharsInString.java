@@ -14,18 +14,11 @@ public class RemoveDuplicateCharsInString {
             charSet.add(s.charAt(i));
         }
 
-        String result = "";
+        StringBuilder result = new StringBuilder();
         for (Character ch : charSet) {
-            result += ch;
+            result.append(ch);
         }
 
-        return result;
-    }
-
-    /**
-    * @param args
-    * */
-    public static void main(String[] args) {
-        System.out.println(removeDuplicateCharsInString("apple"));
+        return result.toString();
     }
 }
