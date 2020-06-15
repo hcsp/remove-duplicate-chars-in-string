@@ -9,15 +9,18 @@ public class RemoveDuplicateCharsInString {
     // 输入apple返回aple
     public static String removeDuplicateCharsInString(String s) {
         HashSet<Character> charSet = new HashSet<>();
-        for (int i = 0; i < s.length(); i++) {
-            charSet.add(s.charAt(i));
-        }
-
         String result = "";
-        for (Character ch : charSet) {
-            result += ch;
+        for (int i = 0; i < s.length(); i++) {
+            if (charSet.add(s.charAt(i))) {
+                result += s.charAt(i);
+            }
         }
 
         return result;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(removeDuplicateCharsInString("ccbbaa"));
+        System.out.println(removeDuplicateCharsInString("apple"));
     }
 }
