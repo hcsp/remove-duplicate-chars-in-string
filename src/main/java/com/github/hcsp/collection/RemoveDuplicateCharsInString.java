@@ -1,8 +1,6 @@
 package com.github.hcsp.collection;
 
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 
 public class RemoveDuplicateCharsInString {
     // 修改这个方法使得它能够输出正确结果：
@@ -15,22 +13,11 @@ public class RemoveDuplicateCharsInString {
             charSet.add(s.charAt(i));
         }
 
-        List<Character> list = new ArrayList<>();
-        for (int index = 0; index < s.length(); index++) {
-            for (Character character : charSet) {
-                if (list.contains(s.charAt(index))) {
-                    continue;
-                }
-                if (s.charAt(index) == character) {
-                    list.add(character);
-                }
-            }
-        }
-
         String result = "";
-        for (Character ch : list) {
+        for (Character ch : charSet) {
             result += ch;
         }
+
         return result;
     }
 }
