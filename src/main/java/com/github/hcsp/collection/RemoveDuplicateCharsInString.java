@@ -1,5 +1,6 @@
 package com.github.hcsp.collection;
 
+import java.util.LinkedHashSet;
 import java.util.HashSet;
 
 public class RemoveDuplicateCharsInString {
@@ -8,7 +9,7 @@ public class RemoveDuplicateCharsInString {
     // 输入ccbbaa返回cba
     // 输入apple返回aple
     public static String removeDuplicateCharsInString(String s) {
-        HashSet<Character> charSet = new HashSet<>();
+       HashSet<Character> charSet = new LinkedHashSet<>();
         for (int i = 0; i < s.length(); i++) {
             charSet.add(s.charAt(i));
         }
