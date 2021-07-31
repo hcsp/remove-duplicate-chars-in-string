@@ -1,6 +1,5 @@
 package com.github.hcsp.collection;
 
-import java.util.HashSet;
 import java.util.LinkedHashSet;
 
 public class RemoveDuplicateCharsInString {
@@ -14,11 +13,11 @@ public class RemoveDuplicateCharsInString {
             charSet.add(s.charAt(i));
         }
 
-        String result = "";
+        StringBuilder result = new StringBuilder();
         for (Character ch : charSet) {
-            result += ch;
+            result.append(ch);
         }
 
-        return result;
+        return result.toString();
     }
 }
