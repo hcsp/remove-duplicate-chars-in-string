@@ -1,19 +1,14 @@
 package com.github.hcsp.collection;
 
 import java.util.HashSet;
-import java.util.LinkedHashSet;
 
 public class RemoveDuplicateCharsInString {
-    public static void main(String[] args) {
-        String c = removeDuplicateCharsInString("apple");
-        System.out.println(c);
-    }
     // 修改这个方法使得它能够输出正确结果：
     // 例如，输入aabbcc返回abc
     // 输入ccbbaa返回cba
     // 输入apple返回aple
     public static String removeDuplicateCharsInString(String s) {
-        HashSet<Character> charSet = new LinkedHashSet<>();
+        HashSet<Character> charSet = new HashSet<>();
         for (int i = 0; i < s.length(); i++) {
             charSet.add(s.charAt(i));
         }
